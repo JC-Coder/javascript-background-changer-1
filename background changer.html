@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change background using javascript</title>
+    <style>
+        .main{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button{
+            margin: 5px;
+            font-size: 20px;
+            border-radius: 50px;
+            height: 100px;
+            width: 100px;
+            padding: 20px;
+            border: none;
+            box-shadow: 2px 2px 7px 0px black;
+        }
+
+        button:hover{
+           transform: translateY(-4px);
+           transition: 0.5s;
+        }
+
+        .red{
+            background: red;
+        }
+
+        .green{
+            background: green;
+        }
+
+        .blue{
+            background: blue;
+        }
+
+        .yellow{
+            background: yellow;
+        }
+
+        .pink{
+            background: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <button class="red" onclick="red()">Red</button>
+        <button class="green" onclick="green()">Green</button>
+        <button class="blue" onclick="blue()">Blue</button>
+        <button class="yellow" onclick="yellow()">Yellow</button>
+        <button class="pink" onclick="pink()">Pink</button>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
